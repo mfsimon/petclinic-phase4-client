@@ -1,11 +1,13 @@
 package com.example.petclinic.client.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Owner {
-
 
     private Long id;
     private String name;
